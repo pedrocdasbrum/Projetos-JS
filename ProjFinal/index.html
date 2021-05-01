@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Pedro Caetano">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="reply-to" content="pedrocdasbrum@gmail.com">
+    <meta name="description" content="Casa Brum - mais que um restaurante, um lar do seu paladar!">
+    <meta name="keywords" content="restaurante, brum, casa, casa restaurante, brum casa, brum restaurante, restaurante casa, chef brum, emanuel brum, chef">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="content-language" content="pt-br">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>Casa Brum</title>
+  </head>
+  <body>
+    <section id="inicio">
+      <div id="slogan">
+        <h1>- Casa Brum -</h1>
+        <h3>Mais do que um restaurante, <p>um lar do seu paladar!</p></h3>
+      </div>
+    </section>
+    <header>
+        <nav id="menu">
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#chef">O Chef</a></li>
+            <a href="#inicio"><div id="slogan_menu_1"><h4>- Casa Brum -</h4></div></a>
+            <li><a href="#cardapio">Cardápio</a></li>
+            <li><a href="#eventos">Eventos</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <a id="menuzinho" onclick="abrirMenu()"><i class="fa fa-bars" aria-hidden="true"></i></a>
+          </ul>
+        </nav>
+        <nav id="menuzinho_lista">
+          <a id="fechar_menu" onclick="fecharMenu()"><i class="fa fa-times-circle-o" aria-hidden="true"></i></a>
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#chef">O Chef</a></li>
+            <li><a href="#cardapio">Cardápio</a></li>
+            <li><a href="#eventos">Eventos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+    </header>
+  <main id="corpo">
+    <section id="sobre">
+      <article id="lema">
+          <h3>Uma culinária com tradição!</h3>
+      </article>
+        <article id="texto_1">
+          <p>A Família Brum há gerações trabalha no ramo da gastronomia e serve às pessoas com o melhor da culinária
+            tanto nacional como internacional, tendo variados gostos para variados clientes.
+            Nosso lema desde a fundação de nosso restaurante principal, a Casa Brum, é este: "Mais do que um restaurante, um lar do seu paladar".</p>
+        </article>
+    </section>
+    <section id="chef">
+      <figure id="img_chef"></figure>
+      <aside id="texto_2">
+        <p id="titulo">Chef Emanuel Brum</p>
+        <hr>
+        <p id="bio">Emanuel Brum é um chef de cozinha, conhecido internacionalmente. Começou sua carreira em 1988 no Pavillon Landais, um restaurante na cidade de Soustons. Seu trabalho seguinte é no restaurante de Michel Guérard (em Eugénie-les-Bains), onde ficou 2 anos, exceto por um pequeno período no inverno trabalhando para Gaston Lenôtre.
+          Vindo de uma família tradicionalmente de chefs de cozinha, atualmente é o 42º chef do restaurante sede da família: Casa Brum. Em 1999, Emanuel fundou sua escola de gastronomia, um centro de treinamento para hoteleiros e restaurateurs.</p>
+      </aside>
+    </section>
+    <section id="cardapio">
+      <article id="texto_3">
+        <article class="menu_cardapio">
+          <p class="titulo_entradas">Entradas</p>
+          <hr>
+          <p>Rã à Moda Brum - Molho Cremoso de Manjericão, Ervas e Alho</p>
+          <p>Carpaccio de Polvo do Chef Emanuel</p>
+        </article>
+        <article class="menu_cardapio">
+          <p class="titulo_entradas">Frutos do Mar</p>
+          <hr>
+          <p>Filé de Peixe ao Molho Curry, Chutney de Manga e Camarão grelhado</p>
+          <p>Filé de Peixe ao Molho Roquefort</p>
+          <p>Polvo à Moda Provençal</p>
+          <p>Camarões VG ao Molho de Tamarindo</p>
+        </article>
+        <article class="menu_cardapio">
+          <p class="titulo_entradas">Bovinos</p>
+          <hr>
+          <p>Filé Mignon ao Molho de Roquefort</p>
+          <p>Filé Mignon ao Molho de Cogumelos, Limão e Ervas Frescas</p>
+        </article>
+        <article class="menu_cardapio">
+          <p class="titulo_entradas">Cordeiros</p>
+          <hr>
+          <p>Carré de Cordeiro ao Molho Vinho Tinto e Pimenta Verde</p>
+        </article>
+      </article>
+    </section>
+    <section id="eventos">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/img-4.jpg" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="img/img-5.jpg" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="img/img-6.jpg" class="d-block w-100">
+          </div>
+        </div>
+      </div>
+      <aside id="texto_4">
+        <p id="titulo_eventos">A Casa Brum inteira só para você!</p>
+        <hr>
+        <p id="texto_5">Todo o sabor, elegância e conforto do melhor restaurante da cidade só para você e seus convidados.
+          Tenha uma noite inesquecível na companhia do Chef Emanuel Brum e de sua equipe, e deguste do melhor da nossa culinária.</p>
+        <p>Para mais informações e disponibilidade de datas, contacte-nos online ou via telefone.</p>
+        <a href="https://pt-br.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="http://www.twitter.com.br/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="https://br.linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      </aside>
+    </section>
+    <section id="contato">
+      <a href="#contato" onclick="abrirFormulario()" id="abrir">Faça aqui sua reserva!</a>
+      <div id="cortina">
+        <article id="contato_2">
+          <a href="#contato" onclick="fecharFormulario()" id="fechar">x</a>
+          <p id="titulo_contato">Contate-nos para tirar dúvidas ou agendar reservas!</p>
+          <p id="texto_6">A excelência da Casa Brum está também online. Prezamos pelo seu contato!</p>
+          <div id="formulario">
+            <div class="mb-3">
+              <input type="text" id="nome" placeholder="Nome completo">
+              <input type="tel" id="telefone" placeholder="Telefone">
+              <input type="email" id="email" placeholder="E-mail">
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" id="mensagem" placeholder="Mensagem"></textarea>
+            </div>
+            <div id="botoes">
+              <button onclick="validar()" type="submit" class="btn btn-outline-success">Enviar mensagem</button>
+              <button onclick="apagar()" type="reset" class="btn btn-outline-danger">Apagar dados</button>
+            </div>
+          </div>
+        </article>
+      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d220895.34554529784!2d-51.31722720082176!3d-30.108795734115713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95199cd2566acb1d%3A0x603111a89f87e91f!2sPorto%20Alegre%2C%20RS!5e0!3m2!1spt-BR!2sbr!4v1618985837313!5m2!1spt-BR!2sbr"></iframe>
+    </section>
+  </main>
+  <footer id="rodape">
+    <div id="slogan_menu_2"><h4>- Casa Brum -</h4></div>
+    <p>Siga-nos!</p>
+    <div id="links">
+      <a href="https://pt-br.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="http://www.twitter.com.br/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      <a href="https://br.linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    </div>
+    <p>Nossos parceiros:</p>
+    <div id="parceiros">
+      <a id="via-imperatore" href="http://www.viaimperatore.com.br/" target="_blank">Via Imperatore</a>
+      <a id="bah-restaurante" href="http://www.grupopress.com.br/bah/" target="_blank">Bah Restaurante</a>
+      <a id="dado" href="https://www.dadobier.com.br/" target="_blank">Dado Bier</a>
+    </div>
+    <p>&copy; Casa Brum 2021</p>
+    <p>- Desenvolvido por Pedro Caetano -</p>
+  </footer>
+  <script type="text/javascript" src="js/funcoes.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+  </body>
+</html>

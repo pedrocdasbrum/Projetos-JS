@@ -1,0 +1,958 @@
+@charset "UTF-8";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+header{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+iframe{
+  border-radius: 1%;
+  box-shadow: 2px 2px 10px #000000;
+  height: 380px;
+  loading: lazy;
+  style-border: 0;
+  position: relative;
+  width: 380px;
+  z-index: 2;
+}
+
+a{
+  text-decoration: none !important;
+}
+
+#inicio{
+    align-items: center;
+    background-color: lightgreen;
+    background-image: url(../img/img-inicio.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    justify-content: center;
+  }
+#slogan{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 40px;
+    position: relative;
+    z-index: 2;
+  }
+#slogan h1,h3{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    text-shadow: 3px 3px 50px #000000;
+  }
+#slogan h1{
+    background-color: #2A120A;
+    border-radius: 60%;
+    color: #FAFAFA;
+    font-size: 30pt;
+    font-weight: lighter;
+    height: 60px;
+    padding-bottom: 5px;
+    width: 300px;
+  }
+#slogan h3{
+    color: #FAFAFA;
+    font-size: 14pt;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+
+#menu{
+    background-color: #FAFAFA;
+    box-shadow: 0px 0px 9px 0px #000000;
+    height: 70px;
+    width: 100%;
+  }
+#menu ul{
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+#menu ul li{
+    list-style: none;
+  }
+#menu ul li a{
+  color: #2A120A;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    padding: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+#menu ul li a:hover{
+  background-color: #2A120A;
+  border-radius: 10px;
+    color: #FAFAFA;
+    transition: 0.3s;
+  }
+#slogan_menu_1{
+    align-items: center;
+    background-color: #2A120A;
+    border-radius: 60%;
+    display: flex;
+    flex-direction: column;
+    height: 45px;
+    justify-content: center;
+    width: 200px;
+  }
+#slogan_menu_1 h4{
+    color: #FAFAFA;
+    font-family: 'Playfair Display', serif;
+    font-size: 20pt;
+    font-weight: lighter;
+    padding-bottom: 3px;
+    text-align: center;
+    text-shadow: 1px 1px 2px #000000;
+  }
+#menuzinho{
+  color: #2A120A;
+  cursor: pointer;
+  display: none;
+  font-size: 18pt;
+  padding: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+#menuzinho:hover{
+  background-color: #2A120A;
+  border-radius: 10px;
+  color: #FAFAFA;
+  transition: 0.3s;
+}
+#menuzinho_lista{
+  align-items: center;
+  background-color: rgba(30, 0, 0, .8);
+  height: 0%;
+  margin-right: -500%;
+  position: fixed;
+  transition: 0.3s;
+  top: 0;
+  width: 100%;
+}
+#menuzinho_lista ul{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+#menuzinho_lista ul li{
+  list-style: none;
+}
+#menuzinho_lista ul li a{
+  color: #FAFAFA;
+  font-family: 'Playfair Display', serif;
+  font-size: 16pt;
+  font-weight: bold;
+  padding: 30px;
+  margin: auto;
+  text-decoration: none;
+  transition: 0.3s;
+  }
+#menuzinho_lista ul li a:hover{
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  color: #FAFAFA;
+  transition: 0.3s;
+  }
+#fechar_menu{
+  color: #FAFAFA;
+  cursor: pointer;
+    float: right;
+    font-size: 18pt;
+    margin-right: 45px;
+    margin-top: 17px;
+    padding: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+#fechar_menu:hover{
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  color: #FAFAFA;
+  transition: 0.3s;
+}
+
+#sobre{
+    background-image: url(../img/img-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 685px;
+    width: 100%;
+  }
+#lema{
+    background-color: #2A120A;
+    border-radius: 2.5%;
+    box-shadow: 2px 2px 10px #000000;
+    align-items: center;
+    display: flex;
+    height: 300px;
+    position: relative;
+    width: 300px;
+    z-index: 2;
+  }
+#lema h3{
+    color: #FAFAFA;
+    font-size: 35pt;
+    height: 100%;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    margin-top: 30px;
+    padding: 20px;
+    text-shadow: none;
+    width: 100%;
+  }
+#texto_1{
+    background-color: #2A120A;
+    border-radius: 2.5%;
+    box-shadow: 2px 2px 10px #000000;
+    color: #FAFAFA;
+    font-family: 'Playfair Display', serif;
+    font-weight: lighter;
+    height: 435px;
+    text-align: center;
+    width: 300px;
+  }
+#texto_1 p{
+    font-size: 16pt;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+  }
+
+#chef{
+    align-items: center;
+    background-color: #2A120A;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 685px;
+    width: 100%;
+  }
+#img_chef{
+    background-image: url(../img/img-chef.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 60%;
+    box-shadow: 2px 2px 10px #000000;
+    height: 520px;
+    margin-top: 20px;
+    width: 400px;
+  }
+#texto_2{
+    color: #FAFAFA;
+    height: 520px;
+    text-align: center;
+    width: 400px;
+  }
+#texto_2 p{
+    font-family: 'Playfair Display', serif;
+    font-weight: lighter;
+    position: relative;
+    z-index: 2;
+  }
+#titulo{
+    font-size: 20pt;
+  }
+#bio{
+    font-size: 16pt;
+  }
+
+#cardapio{
+    align-items: center;
+    background-color: #FAFAFA;
+    background-image: url(../img/img-comida.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    height: 685px;
+    justify-content: space-around;
+    width: 100%;
+  }
+#texto_3{
+    color: #FAFAFA;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 70%;
+    width: 90%;
+  }
+.menu_cardapio{
+    background-color: rgba(30, 0, 0, .8);
+    border-radius: 2.5%;
+    box-shadow: 2px 2px 10px #000000;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    height: 70%;
+    margin-top: 110px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    width: 20%;
+    z-index: 2;
+  }
+.titulo_entradas{
+    font-weight: 900;
+  }
+
+#eventos{
+    align-items: center;
+    background-color: lightpink;
+    background-image: url(../img/img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 685px;
+    width: 100%;
+  }
+#carouselExampleControls{
+    background-color: #2A120A;
+    border-style: solid;
+    border-color: #2A120A;
+    border-radius: 1%;
+    box-shadow: 2px 2px 10px #000000;
+    height: 520px;
+    margin-top: 20px;
+    width: 480px;
+  }
+.carousel, .carousel-inner, .carousel-item{
+    position: inherit !important;
+  }
+#texto_4{
+    background-color: rgba(30, 0, 0, .8);
+    border-radius: 1%;
+    box-shadow: 2px 2px 10px #000000;
+    color: #FAFAFA;
+    float: left;
+    height: 520px;
+    padding: 20px;
+    text-align: center;
+    width: 400px;
+  }
+#texto_4 p{
+    font-family: 'Playfair Display', serif;
+    font-weight: lighter;
+    position: relative;
+    z-index: 2;
+  }
+#texto_4 a{
+    border-radius: 100%;
+    color: #FAFAFA;
+    font-size: 1.1em;
+    padding: 10px;
+    position: relative;
+    transition: 0.3s;
+    z-index: 2;
+  }
+#texto_4 a:hover{
+    background-color: #FAFAFA;
+    color: #2A120A;
+    border-radius: 100%;
+    transition: 0.3s;
+  }
+#titulo_eventos{
+    font-size: 20pt;
+  }
+#texto_5{
+    font-size: 16pt;
+  }
+
+#contato{
+    align-items: center;
+    background-color: #2A120A;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 685px;
+    width: 100%;
+  }
+#abrir{
+  border-color: #FAFAFA;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: thin;
+  color: #FAFAFA;
+  font-size: 1.5em;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  list-style: none;
+  padding: 1%;
+  position: relative;
+  text-decoration: none;
+  transition: 0.3s;
+  z-index: 2;
+}
+#abrir:hover{
+  background-color: #FAFAFA;
+  box-shadow: 2px 2px 10px #000000;
+  color: #2A120A;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+#cortina{
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: 2px 2px 10px #000000;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  transition: 1s;
+  width: 100%;
+  z-index: 1;
+}
+#contato_2{
+    background-color: #FAFAFA;
+    border-radius: 1%;
+    color: #2A120A;
+    height: 375px;
+    margin: auto;
+    margin-top: -500px;
+    transition: 1.2s;
+    width: 535px;
+  }
+#fechar{
+  border-color: #2A120A;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: thin;
+  color: #2A120A;
+  list-style: none;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-decoration: none;
+  transition: 0.3s;
+  float: right;
+  margin: 5px;
+}
+#fechar:hover{
+  background-color: #2A120A;
+  color: #FAFAFA;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+#contato_2 p{
+    font-family: 'Playfair Display', serif;
+    font-weight: lighter;
+    padding: 6px;
+  }
+#titulo_contato{
+    font-size: 16pt;
+  }
+#texto_6{
+    font-size: 14pt;
+  }
+.mb-3{
+    padding: 6px;
+  }
+#nome{
+    width: 300px;
+  }
+#email{
+    margin-top: 5px;
+    width: 300px;
+  }
+#botoes{
+    padding: 6px;
+  }
+
+#rodape{
+    align-items: center;
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 500px;
+    width: 100%;
+  }
+#rodape a{
+    border-radius: 100%;
+    color: #2A120A;
+    font-size: 1.3em;
+    padding: 10px;
+    position: relative;
+    text-decoration: none;
+    transition: 0.3s;
+    z-index: 2;
+  }
+#rodape a:hover{
+    background-color: #2A120A;
+    color: #FAFAFA;
+    border-radius: 100%;
+    transition: 0.3s;
+  }
+#rodape p{
+    font-family: 'Playfair Display', serif;
+    font-size: 12pt;
+    font-weight: 600;
+    position: relative;
+    z-index: 2;
+  }
+#slogan_menu_2{
+  align-items: center;
+  background-color: #2A120A;
+  border-radius: 60%;
+  display: flex;
+  flex-direction: column;
+  height: 45px;
+  justify-content: center;
+  position: relative;
+  width: 200px;
+  z-index: 2;
+  }
+#slogan_menu_2 h4{
+  color: #FAFAFA;
+  font-family: 'Playfair Display', serif;
+  font-size: 20pt;
+  font-weight: lighter;
+  padding-bottom: 3px;
+  text-align: center;
+  text-shadow: 1px 1px 2px #000000;
+  }
+#via-imperatore{
+  border-color: #2A120A;
+  border-radius: 10px !important;
+  border-style: solid;
+  border-width: thin;
+  font-size: 1.2em !important;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+#bah-restaurante{
+  border-color: #2A120A;
+  border-radius: 10px !important;
+  border-style: solid;
+  border-width: thin;
+  font-size: 1.2em !important;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+#dado{
+  border-color: #2A120A;
+  border-radius: 10px !important;
+  border-style: solid;
+  border-width: thin;
+  font-size: 1.2em !important;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 768px){
+  iframe{
+    height: 350px;
+    margin-bottom: 100px;
+    width: 535px;
+  }
+
+  #inicio{
+    height: 950px;
+  }
+  #slogan h1{
+    font-size: 32pt;
+    font-weight: lighter;
+    height: 65px;
+    padding-bottom: 5px;
+    width: 330px;
+  }
+  #slogan h3{
+    font-size: 20pt;
+  }
+
+  #menu ul li a{
+    font-size: 18pt;
+  }
+  #slogan_menu_1{
+    display: none;
+  }
+
+  #sobre{
+    flex-direction: column;
+    height: 1100px;
+  }
+  #lema{
+    height: 190px;
+    margin-top: 300px;
+    width: 600px;
+  }
+  #texto_1{
+    height: 300px;
+    margin-bottom: 300px;
+    width: 600px;
+  }
+  #texto_1 p{
+    font-size: 18pt;
+  }
+
+  #chef{
+    flex-direction: column;
+    height: 1100px;
+  }
+  #img_chef{
+    height: 420px;
+    margin-top: 80px;
+    width: 400px;
+  }
+  #texto_2{
+    height: 500px;
+    margin-bottom: 70px;
+    width: 600px;
+  }
+  #titulo{
+    font-size: 24pt;
+  }
+  #bio{
+    font-size: 18pt;
+  }
+
+  #cardapio{
+    flex-direction: column;
+    height: 1300px;
+  }
+  #texto_3{
+    align-items: center;
+    flex-direction: column;
+    height: 800px;
+    width: 90%;
+  }
+  .menu_cardapio{
+    font-size: 16pt;
+    height: 400px;
+    margin-top: 50px;
+    text-align: center;
+    width: 80%;
+  }
+
+  #eventos{
+    flex-direction: column;
+    justify-content: space-around;
+    height: 1400px;
+    width: 100%;
+  }
+  #carouselExampleControls{
+    height: 520px;
+    margin-top: 90px;
+    width: 480px;
+  }
+  #texto_4{
+    height: 520px;
+    margin-bottom: 200px;
+    width: 480px;
+  }
+  #texto_4 p{
+    font-size: 16pt;
+  }
+  #texto_4 a{
+    font-size: 2em;
+    padding: 20px;
+  }
+  #titulo_eventos{
+    font-size: 24pt !important;
+  }
+  #texto_5{
+    font-size: 18pt !important;
+  }
+
+  #contato{
+    flex-direction: column;
+    height: 1100px;
+    width: 100%;
+  }
+  #abrir{
+    margin-top: 200px;
+  }
+  #contato_2{
+    height: 500px;
+    margin-top: 100px;
+    width: 535px;
+  }
+  #contato_2 p{
+    padding: 12px;
+  }
+  #titulo_contato{
+    font-size: 20pt;
+  }
+  #texto_6{
+    font-size: 16pt;
+  }
+  .mb-3{
+    padding: 12px;
+  }
+  .mb-3 input::placeholder, textarea::placeholder{
+    font-size: 14pt;
+  }
+  #botoes{
+    padding: 12px;
+  }
+
+  #rodape{
+    height: 500px;
+    width: 100%;
+  }
+  #rodape a{
+    font-size: 2em;
+    padding: 20px;
+  }
+  #rodape a:hover{
+    background-color: #2A120A;
+    color: #FAFAFA;
+    border-radius: 100%;
+    transition: 0.5s;
+  }
+  #rodape p{
+    font-size: 18pt;
+  }
+  #slogan_menu_2{
+    height: 50px;
+    width: 250px;
+    }
+  #slogan_menu_2 h4{
+    font-size: 24pt;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  iframe{
+    height: 350px;
+    margin-bottom: 100px;
+    width: 335px;
+  }
+
+  #inicio{
+    height: 745px;
+    width: 100%;
+  }
+  #slogan{
+    width: 100%;
+  }
+  #slogan h1{
+    font-size: 20pt;
+    height: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 60%;
+  }
+  #slogan h3{
+    font-size: 16pt;
+  }
+
+  #menu ul li{
+      display: none;
+    }
+  #slogan_menu_1{
+      display: block;
+  }
+  #menuzinho{
+    display: block;
+  }
+  #menuzinho_lista{
+    align-items: center;
+    background-color: rgba(30, 0, 0, .8);
+    height: 0%;
+    margin-right: -500%;
+    position: fixed;
+    transition: 2s;
+    top: 0;
+    width: 100%;
+  }
+  #menuzinho_lista ul{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  #menuzinho_lista ul li{
+    list-style: none;
+  }
+  #fechar_menu{
+      margin-right: 28px;
+      margin-top: 17px;
+  }
+
+  #sobre{
+    flex-direction: column;
+    height: 850px;
+    width: 100%;
+  }
+  #lema{
+    height: 150px;
+    width: 250px;
+  }
+  #lema h3{
+    font-size: 24pt;
+    margin-top: 30px;
+    width: 100%;
+  }
+  #texto_1{
+    height: 470px;
+    margin-top: 15px;
+    width: 250px;
+  }
+  #texto_1 p{
+    font-size: 14pt;
+    padding: 20px;
+  }
+
+  #chef{
+    flex-direction: column;
+    height: 1600px;
+    width: 100%;
+  }
+  #img_chef{
+    height: 350px;
+    margin-top: 10px;
+    width: 300px;
+  }
+  #texto_2{
+    height: 300px;
+    margin-bottom: 500px;
+    width: 300px;
+  }
+  #bio{
+      font-size: 16pt;
+    }
+
+  #cardapio{
+    flex-direction: column;
+    height: 1800px;
+  }
+  #texto_3{
+    align-items: center;
+    flex-direction: column;
+    height: 800px;
+    width: 90%;
+  }
+  .menu_cardapio{
+    font-size: 16pt;
+    height: 600px;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 80%;
+  }
+
+  #eventos{
+    flex-direction: column;
+    justify-content: space-around;
+    height: 1100px;
+    width: 100%;
+  }
+  #carouselExampleControls{
+    height: 29.5%;
+    margin-top: 20px;
+    width: 80%;
+  }
+  #texto_4{
+    height: 500px;
+    margin-bottom: 30px;
+    width: 350px;
+  }
+  #texto_4 p{
+    font-size: 12pt;
+  }
+  #texto_4 a{
+    font-size: 1.1em;
+    padding: 20px;
+  }
+  #titulo_eventos{
+    font-size: 18pt !important;
+  }
+  #texto_5{
+    font-size: 14pt !important;
+  }
+
+  #contato{
+    flex-direction: column;
+    height: 1000px;
+    width: 100%;
+  }
+  #abrir{
+    margin-top: 30px;
+  }
+  #contato_2{
+    height: 500px;
+    margin-top: 250px;
+    width: 335px;
+  }
+  #contato_2 p{
+    padding: 12px;
+  }
+  #titulo_contato{
+    font-size: 14pt;
+  }
+  #texto_6{
+    font-size: 12pt;
+  }
+  .mb-3{
+    padding: 12px;
+  }
+  .mb-3 input::placeholder, textarea::placeholder{
+    font-size: 14pt;
+  }
+  #botoes{
+    padding: 12px;
+  }
+
+  #rodape{
+    height: 800px;
+    width: 100%;
+  }
+  #rodape a{
+    font-size: 1.5em;
+  }
+  #rodape p{
+    font-size: 15pt;
+  }
+  #parceiros{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  #via-imperatore{
+    font-size: 1.3em !important;
+  }
+  #bah-restaurante{
+    font-size: 1.3em !important;
+  }
+  #dado{
+    font-size: 1.3em !important;
+  }
+
+}
