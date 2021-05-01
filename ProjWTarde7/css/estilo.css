@@ -1,0 +1,209 @@
+@charset "UTF-8";/*comando definido para adequar a linguagem do site em línguas latinas que possuam caracteres/acentos especiais*/
+
+*{/*definindo margem e espaçamento nulos para todo o site*/
+  margin: 0;
+  padding: 0;
+}
+
+h6{/*definindo visibilidade invisível e posição absoluta para todos os h6 do site*/
+  visibility: hidden;
+  position: absolute;
+}
+
+html{/*definindo configuração deslizante para o rolamento do site inteiro*/
+  scroll-behavior: smooth;
+}
+
+#principal{/*definindo as configurações básicas (plano de fundo, altura e largura, e posição absoluta) para a divisão principal do site*/
+  background-color: #F2F5A9;
+  width: 100%;
+  height: 300%;
+  position: absolute;
+}
+
+#topo{/*definindo as configurações básicas do topo do site junto às funções display flex para organizar os itens*/
+  background-color: #F89D0B;
+  width: 100%;
+  height: 5%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+#menu{/*definindo as configurações básicas do menu do site junto às funções display flex para organizar os itens*/
+  background-color: #FFFFFF;
+  border-top-left-radius: 10vh;
+  width: 50%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+}
+#menu ul{/*definindo as configurações básicas da seção ul do menu do site junto às funções display flex, para organizar os itens, e edições de texto*/
+  width: 65%;
+  height: 100%;
+  font-family: sans-serif;
+  font-size: 3.5vh;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  text-shadow: 1px 1px 2px #000000;
+}
+#menu ul li a{/*definindo a cor e a decoração de texto da tag a dentro do li na seção ul do menu*/
+  color: #F89D0B;
+  text-decoration: none;
+}
+#menu ul li a:hover{/*definindo a cor da tag a pressionada (com o atributo hover) e o tipo do cursor sobre ela*/
+  color: #FFBF00;
+  cursor: pointer;
+}
+
+#corpo{/*definindo as configurações básicas do corpo do site*/
+  background-color: #FAAC58;
+  width: 100%;
+  height: 95%;
+}
+#conteudo_superior{/*definindo as configurações básicas do conteudo_superior junto às funções display flex para organizar os itens*/
+  background-color: #FFFFFF !important;
+  width: 100%;
+  height: 33.3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#imagem1{/*definindo as configurações de imagem e estilo da imagem1*/
+  background-image: url(../img/img1.png);
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 6px #000000;
+  background-size: cover;
+  background-position: center;
+  width: 80%;
+  height: 53%;
+}
+#artigo_superior{/*definindo as configurações básicas do artigo_superior junto às funções display flex para organizar os itens*/
+  width: 70%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: sans-serif;
+}
+#artigo_superior h2{/*definindo as configurações de texto do h2 do artigo_superior*/
+  color: #F89D0B;
+  font-size: 5vh;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #000000;
+}
+#artigo_superior p{/*definindo as configurações de texto do p do artigo_superior*/
+  color: #2E2E2E;
+  font-size: 2.9vh;
+  font-weight: normal;
+  text-align: center;
+}
+#conteudo_intermediario{/*definindo as configurações básicas junto às funções display flex para organizar os itens do conteudo_intermediario*/
+  background-color: #F89D0B;
+  width: 100%;
+  height: 33.3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#imagem2{/*definindo as configurações básicas junto às funções display flex para organizar os itens da imagem2*/
+  background-color: transparent;
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+#imagem2_1{/*definindo as configurações de imagem e estilo da imagem2_1*/
+  background-image: url(../img/img2.png);
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 6px #000000;
+  background-size: cover;
+  background-position: center;
+  width: 40%;
+  height: 80%;
+}
+#imagem2_2{/*definindo as configurações de imagem e estilo da imagem2_2*/
+  background-image: url(../img/img3.png);
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 6px #000000;
+  background-size: cover;
+  background-position: center;
+  width: 40%;
+  height: 80%;
+}
+#artigo_intermediario{/*deefinindo as configurações básicas junto às funções display flex para organizar os itens do artigo_intermediario*/
+  background-color: transparent;
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+#artigo_intermediario_1,#artigo_intermediario_2{/*definindo as configurações de imagem e funções display flex para organizar os itens dos artigo_intermediario_1 e artigo_intermediario_2*/
+  background-color: #FFFFFF;
+  color: #F89D0B;
+  box-shadow: 2px 2px 6px #000000;
+  font-family: sans-serif;
+  font-size: 4vh;
+  font-weight: bold;
+  width: 33%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#artigo_intermediario_1,#artigo_intermediario_2 h2{/*definindo as configurações de sombra de texto do h2 dos artigo_intermediario_1 e artigo_intermediario_2*/
+  text-shadow: 1px 1px 2px #000000;
+}
+#artigo_intermediario_1:hover{/*definindo as configurações do hover no artigo_intermediario_1; sua cor e tipo de cursor sobre ele*/
+  color: #FFBF00;
+  cursor: pointer;
+}
+#artigo_intermediario_2:hover{/*definindo as configurações do hover no artigo_intermediario_1; sua cor e tipo de cursor sobre ele*/
+  color: #FFBF00;
+  cursor: pointer;
+}
+#conteudo_inferior{/*definindo as configurações básicas do conteudo_inferior junto às funções display flex para organizar os itens*/
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 33.3%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+#conteudo_inferior iframe{/*definindo as configurações de borda e estilo do iframe do conteudo_inferior*/
+  width: 45%;;
+  height: 90%;
+  border: solid;
+  border-color: #F89D0B;
+  box-shadow: 2px 2px 6px #000000;
+  loading: lazy;
+}
+#artigo_inferior{/*definindo as configurações básicas do artigo_inferior junto às funções display flex para organizar os itens*/
+  width: 45%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#artigo_inferior h4{/*definindo as configurações de texto e estilo do h4 no artigo_inferior*/
+  background-color: #F89D0B;
+  box-shadow: 2px 2px 6px #000000;
+  color: #2E2E2E;
+  font-family: sans-serif;
+  font-size: 2.5vh;
+  font-weight: normal;
+  width: 100%;
+  height: 15%;
+  padding-top: 20px !important;
+  text-align: center;
+}

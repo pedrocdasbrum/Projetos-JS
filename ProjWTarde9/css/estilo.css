@@ -1,0 +1,212 @@
+@charset "UTF-8";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+#principal{
+  background-color: #000000;
+  width: 100%;
+  height: 450%;
+  position: absolute;
+}
+
+#topo{
+  width: 100%;
+  height: 15%;
+  background-color: #000000;
+  display: flex;
+  justify-content: flex-end;
+  background-image: url("../img/img4.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#menu{
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+}
+#menu ul{
+  width: 45%;
+  height: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin-top: 0.3%;
+  color: white;
+}
+#menu ul li a{
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+#corpo{
+  background-color: #000000;
+  width: 100%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+#sessoes1, #sessoes3{
+  background-color: #2E2E2E;
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: justify;
+}
+#sessoes2{
+  background-color: #2E2E2E;
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  text-align: justify;
+}
+#imagem1{
+  background-image: url(../img/img5.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 25%;
+  height: 90%;
+}
+#imagem2{
+  background-image: url(../img/img6.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 25%;
+  height: 90%;
+}
+#imagem3{
+  background-image: url(../img/img7.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 25%;
+  height: 90%;
+}
+#artigo1, #artigo2, #artigo3{
+  width: 20%;
+  height: 90%;
+}
+#artigo1 h2,h4{
+  font-family: sans-serif;
+  color: #FFFFFF;
+}
+#artigo2 h2,h4{
+  font-family: sans-serif;
+  color: #FFFFFF;
+}
+#artigo3 h2,h4{
+  font-family: sans-serif;
+  color: #FFFFFF;
+}
+#artigo1 h2{
+  font-size: 18pt;
+}
+#artigo1 h4{
+  font-size: 14pt;
+}
+#artigo2 h2{
+  font-size: 18pt;
+}
+#artigo2 h4{
+  font-size: 14pt;
+}
+#artigo3 h2{
+  font-size: 18pt;
+}
+#artigo3 h4{
+  font-size: 14pt;
+}
+#video1{
+  width: 40%;
+}
+#video2{
+  width: 40%;
+}
+#video3{
+  width: 40%;
+}
+
+#bilheteria{
+  background-color: #D8D8D8;
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+form{
+ width: 40%;
+ height: 80%;
+}
+
+iframe{
+  width: 50%;
+  height: 80%;
+  border: 0;
+  loading: lazy;
+}
+
+#carouselExampleCaptions{
+  width: 40%;
+}
+
+
+#rodape{
+ width: 100%;
+ height: 10%;
+ background-color:black;
+ display: flex;
+ align-items: center;
+}
+
+#contatos{
+ width: 50%;
+ height: 100%;
+ background-color: black;
+ align-items: center;
+ margin-left: 15%;
+}
+#sobre{
+ width: 50%;
+ height: 100%;
+ background-color: black;
+ margin-left: 9%;
+}
+#sobre ul{
+ list-style: none;
+ height: 30%;
+ color: white;
+ word-spacing: 4%;
+}
+#contatos ul{
+ list-style: none;
+ color: white;
+}
+#contatos ul li a{
+  color: #FFFFFF;
+  text-decoration: none;
+}

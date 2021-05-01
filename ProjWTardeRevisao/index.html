@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Pedro Caetano">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <title>Revisão</title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+      var nomeDoAluno;
+      var n1;
+      var n2;
+      var media;
+      var resultado;
+
+      nomeDoAluno = window.prompt("Informe o nome do aluno: ");
+      n1 = parseFloat(window.prompt("Informe a n1 do aluno(a) "+nomeDoAluno+": "));
+      n2 = parseFloat(window.prompt("Informe a n2 do aluno(a) "+nomeDoAluno+": "));
+      media = (n1+n2)/2;
+      if (media>=7) {
+        resultado = "Aprovado";
+      }else {
+        resultado = "Reprovado";
+      }
+
+      window.alert("Dados do aluno\n"+
+                    "Nome: "+nomeDoAluno+"\n"+
+                    "N1: "+n1+"\n"+
+                    "N2: "+n2+"\n"+
+                    "Média: "+media+"\n"+
+                    "Resultado: "+resultado);
+    </script>
+  </body>
+</html>
