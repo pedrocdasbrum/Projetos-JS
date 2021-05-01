@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+*{
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body{
+  
+}
+
+#abrir{
+  position: absolute;
+  z-index: 2;
+}
+
+#cortina{
+  background-color: rgba(0, 0, 0, 0);
+  height: 100%;
+  position: fixed;
+  transition: 1s;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+#fechar{
+  float: right;
+  margin: 20px;
+}
+
+#modal{
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 15px black;
+  height: 60%;
+  margin: auto;
+  margin-top: -500px;
+  transition: 1.2s;
+  width: 55%;
+}
+#modal form{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  justify-content: space-around;
+  width: 100%;
+}
+#resultado{
+  font-size: 2vh;
+}

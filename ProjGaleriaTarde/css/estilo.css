@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+video{
+  width: 50%;
+}
+
+p{
+  margin: 1%;
+}
+
+#gradiente{
+  background-image: linear-gradient(white,black 80%);
+  width: 800px;
+  height: 300px;
+  margin: auto;
+  transition: 0.5s;
+}
+#gradiente:hover{
+  background-image: linear-gradient(white,red 80%);
+}
+
+#galeria{
+  background-color: chocolate;
+  width: 800px;
+  height: 600px;
+}

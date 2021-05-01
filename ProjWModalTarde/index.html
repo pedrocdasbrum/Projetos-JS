@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Pedro Caetano">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <title>Modal JS</title>
+  </head>
+  <body>
+    <a href="#" onclick="abrirCalculadora()" id="abrir">Abrir</a>
+    <div id="cortina">
+      <div id="modal">
+        <a href="#" id="fechar" onclick="fecharCalculadora()">X</a>
+        <form action="" method="get">
+          <label>Valor 1:
+            <input type="text" id="v1" name="n_v1">
+          </label>
+          <label>Valor 2:
+            <input type="text" id="v2" name="n_v2">
+          </label>
+          <label>Operacao:
+            <select id="operacao">
+              <option value="+">+</option>
+              <option value="-">-</option>
+              <option value="*">*</option>
+              <option value="/">/</option>
+              <option value="%">%</option>
+              <option value="pow">pow</option>
+              <option value="raiz">raiz</option>
+            </select>
+          </label>
+          <input type="button" value="Calcular" onclick="validar()">
+        </form>
+        <h1 id="resultado"></h1>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/funcoes.js"></script>
+  </body>
+</html>
