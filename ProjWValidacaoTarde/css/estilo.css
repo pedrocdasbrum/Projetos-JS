@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
++{
+  margin: 0;
+  padding: 0;
+}
+
+form{
+  align-items: center;
+  background-color: chocolate;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: space-around;
+  margin: auto;
+  width: 50%;
+}
+form input{
+  height: 40px;
+  width: 80%;
+}
+
+button{
+  height: 40px;
+  margin-left: 338px;
+  width: 15%;
+}
+
+span{
+  margin-left: 50px;
+  padding: 10px;
+  position: absolute;
+}
